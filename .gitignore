@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+# Custom
+.vs
+
+x64/Debug
+x64/Release
+
+BeyondClient/x64
+BeyondClient/Definitons/il2cpp.h
+
+BeyondDriver/x64
+
+Beyond_SYS_To_Vector/x64

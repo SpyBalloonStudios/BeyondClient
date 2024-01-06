@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="demo">
+      <UniqueIdentifier>{c01b413b-627b-4447-aaf9-d4fc7a57b421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\OS-ImGuiBase">
+      <UniqueIdentifier>{5929bfe0-66c4-4264-a568-6d8e31233d38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Objects">
+      <UniqueIdentifier>{943fb373-9a83-4dac-9529-1b0ee6b6977b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\LogWriter">
+      <UniqueIdentifier>{27099316-9714-4b55-81b1-9700cb334540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\ButtonApi">
+      <UniqueIdentifier>{f85d276a-f23f-49fb-9080-08a8f0ff6bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Unity">
+      <UniqueIdentifier>{afb17433-4836-4847-b6af-4796e5dcaf36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Modules">
+      <UniqueIdentifier>{bc629e7c-f55d-4611-b5db-f94d276b9a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Handler">
+      <UniqueIdentifier>{eb7a9512-2526-4dfb-bde6-a112feb7e0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Hook">
+      <UniqueIdentifier>{fca11c1a-0d32-4b5b-abb0-2da0497d8504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\Hook\Hooks">
+      <UniqueIdentifier>{367679a7-2ee5-483d-b3a7-405d43a02197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demo\UnityClasses">
+      <UniqueIdentifier>{ee5b6740-2df4-40e4-9479-346316ed3808}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OS-ImGui.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui_Struct.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui_External.h">
+      <Filter>sources\OS-ImGuiBase</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui_Exception.hpp">
+      <Filter>sources\OS-ImGuiBase</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui_Base.h">
+      <Filter>sources\OS-ImGuiBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="LogWindow.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationManager.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Player.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Camera.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\ApiUser.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\ApiAvatar.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\VRCPlayerAPI.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LogWriter.h">
+      <Filter>demo\LogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\vrcplayer.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotonUtils.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Bot.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CPP.h">
+      <Filter>demo\ButtonApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Unity.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonUtils.h">
+      <Filter>demo\ButtonApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\CameraZoom.h">
+      <Filter>demo\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Text.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Gameobject.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\TextMeshPro.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Button.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\playernet.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\FlyHandler.h">
+      <Filter>demo\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\BunnyHop.h">
+      <Filter>demo\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffects.h">
+      <Filter>demo\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\Raw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\renderui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\include\MinHook.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\buffer.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\hde\hde32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\hde\hde64.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\hde\pstdint.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\hde\table32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\hde\table64.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHooks\hook\src\trampoline.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetDumper.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitons\il2cpp.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="VRCCombat.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\transform.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Gizmos.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemOrbit.h">
+      <Filter>demo\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>demo\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleButton.h">
+      <Filter>demo\ButtonApi</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>demo\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="HookManager.h">
+      <Filter>demo\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="VRC_Pickup_Hook.h">
+      <Filter>demo\Hook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC_Hook.h">
+      <Filter>demo\Hook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Photon_Hook.h">
+      <Filter>demo\Hook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager_Hook.h">
+      <Filter>demo\Hook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="VRCPlayerApi_Hook.h">
+      <Filter>demo\Hook\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="VRC_SDKBase_VRCPickup_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="VRC_SDKBase_VRCPlayerApi_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="UnityEngine_UI_Button_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="UnityEngine_Renderer_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="UnityEngine_MeshRenderer_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="TMPro_TextMeshProUGUI_o.h">
+      <Filter>demo\UnityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderUtils.h">
+      <Filter>demo\Handler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>demo</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui_External.cpp">
+      <Filter>sources\OS-ImGuiBase</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui_Base.cpp">
+      <Filter>sources\OS-ImGuiBase</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\renderui.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\hook\src\buffer.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\hook\src\hde\hde32.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\hook\src\hde\hde64.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\hook\src\hook.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderHooks\hook\src\trampoline.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RenderHooks\hook\dll_resources\MinHook.def">
+      <Filter>sources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RenderHooks\hook\dll_resources\MinHook.rc" />
+  </ItemGroup>
+</Project>

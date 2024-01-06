@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{3915832f-f15f-453b-99ad-aaee2acaa8a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\imgui">
+      <UniqueIdentifier>{39dbd3a4-bda5-4317-a3ef-50064f12ff10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{00794305-ea9a-47a5-bd71-f81cc5517c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\font">
+      <UniqueIdentifier>{6ca62923-0f53-409a-89d8-4645b470d87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Injector">
+      <UniqueIdentifier>{19286400-0b60-466b-a0ce-3d4fa8d3c3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{ff2ddf86-ae53-4946-9a3e-1ec7d987be99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{417f8420-70b4-47c9-aa74-9788edeedcef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map">
+      <UniqueIdentifier>{023c0d69-7fed-449c-b5f1-e701edff4f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map\vdm_ctx">
+      <UniqueIdentifier>{6a2c6467-0235-481f-b114-751728b3dc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map\vdm">
+      <UniqueIdentifier>{7b6bfdb7-1596-407f-85e6-e605069dfd11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map\utils">
+      <UniqueIdentifier>{ec678561-4bdd-47d9-96b9-80486503a35a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map\raw">
+      <UniqueIdentifier>{9918312d-6193-4e5e-8053-92049f261967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Map\drv_image">
+      <UniqueIdentifier>{38447c11-65bb-4a46-8b7b-afaa7b822f52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Framework\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader.cpp" />
+    <ClCompile Include="DrvMapper.cpp">
+      <Filter>Driver\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="vdm_ctx.cpp">
+      <Filter>Driver\Map\vdm_ctx</Filter>
+    </ClCompile>
+    <ClCompile Include="drv_image.cpp">
+      <Filter>Driver\Map\drv_image</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Framework\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Menu\font</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="icons.h">
+      <Filter>Menu\font</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiUtils.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Beyond_Logo.h" />
+    <ClInclude Include="Xorstr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Imports.h" />
+    <ClInclude Include="Injector.h">
+      <Filter>Injector</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="Log.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="dll\dlldata.h">
+      <Filter>Dll</Filter>
+    </ClInclude>
+    <ClInclude Include="DrvMapper.h">
+      <Filter>Driver\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="vdm_ctx.h">
+      <Filter>Driver\Map\vdm_ctx</Filter>
+    </ClInclude>
+    <ClInclude Include="vdm.h">
+      <Filter>Driver\Map\vdm</Filter>
+    </ClInclude>
+    <ClInclude Include="loadup.h">
+      <Filter>Driver\Map\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Driver\Map\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="nt.h">
+      <Filter>Driver\Map\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="raw_driver.h">
+      <Filter>Driver\Map\raw</Filter>
+    </ClInclude>
+    <ClInclude Include="drv_image.h">
+      <Filter>Driver\Map\drv_image</Filter>
+    </ClInclude>
+    <ClInclude Include="RawDriver.h">
+      <Filter>Driver\Map\raw</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Beyond_Launcher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ouroboros.ico" />
+  </ItemGroup>
+</Project>

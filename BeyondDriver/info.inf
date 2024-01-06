@@ -1,0 +1,71 @@
+[Version]
+Signature="$WINDOWS NT$"
+
+Class=Test1
+ClassGuid={F70E0A94-7D65-4CDA-B00D-8A57A9F46365}
+Provider=%ManufacturerName%
+CatalogFile=BeyondDriver.cat
+DriverVer=189
+
+[DestinationDirs]
+DefaultDestDir = 12
+BeyondDriver_Device_CoInstaller_CopyFiles = 11
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+BeyondDriver.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%BeyondDriver.DeviceDesc%=BeyondDriver_Device, Root\BeyondDriver
+
+[BeyondDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+BeyondDriver.sys
+
+[BeyondDriver_Device.NT.Services]
+AddService = BeyondDriver,%SPSVCINST_ASSOCSERVICE%, BeyondDriver_Service_Inst
+
+[BeyondDriver_Service_Inst]
+DisplayName    = %BeyondDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BeyondDriver.sys
+
+[BeyondDriver_Device.NT.CoInstallers]
+AddReg=BeyondDriver_Device_CoInstaller_AddReg
+CopyFiles=BeyondDriver_Device_CoInstaller_CopyFiles
+
+[BeyondDriver_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[BeyondDriver_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[BeyondDriver_Device.NT.Wdf]
+KmdfService =  BeyondDriver, BeyondDriver_wdfsect
+[BeyondDriver_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="BeyondIsGudStuffNGLdontCrackUwUNoggerEacPoopoKakiLulSKibidyToiletGyatRizzFanumTaxEdition"
+ClassName="NameClass"
+DiskName = "BeyondDriver Installation Disk"
+BeyondDriver.DeviceDesc = "BeyondDriver Device"
+BeyondDriver.SVCDESC = "BeyondDriver Service"
