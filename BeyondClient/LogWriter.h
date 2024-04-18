@@ -6,7 +6,7 @@ std::mutex LogFileMutex;
 void CreateLogFile()
 {
     if (!Config::Log::File::Enabled) return;
-    fs::create_directory("midnight");
+    fs::create_directory("ecbase");
 
     std::time_t currentTime = std::time(0);
     std::tm* now = std::localtime(&currentTime);
@@ -20,7 +20,7 @@ void CreateLogFile()
         std::strftime(timestamp, sizeof(timestamp), "%Y-%m-%d_%H-%M-%S", now);
         fileName = "output_log_" + std::string(timestamp);
     }
-    LogFile = "midnight/" + fileName + ".txt";
+    LogFile = "ecbase/" + fileName + ".txt";
 
     std::ofstream outputFile(LogFile);
 

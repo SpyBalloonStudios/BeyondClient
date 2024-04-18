@@ -2,6 +2,8 @@
 #include "RenderHooks/renderui.h"
 #include "OffsetDumper.h"
 
+
+
 void InitConsole()
 {
 	AllocConsole();
@@ -34,6 +36,11 @@ DWORD WINAPI main()
 
 	rdr::init();
 	return 0;
+}
+
+
+void ChecckIfGame() {
+
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)

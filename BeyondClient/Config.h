@@ -76,6 +76,16 @@ namespace Config {
 			bool Shutdown = false; // INTERNAL: Initializes a event shutdown
 			int LastIntervalTotalEvents = 0; // INTERNAL: Stores the total events of the last interval
 		}
+
+		namespace HexedProtection {
+			bool Enabled = false;
+		}
+
+		namespace TrueBlock
+		{
+			bool Enabled = false; 
+			int BlockLevel = 0; //0 = Normal Block, 1 = Dont load Object, 3 = Block any Event from this user 
+		}
 	}
 
 	namespace Render {

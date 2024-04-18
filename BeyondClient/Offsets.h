@@ -3,15 +3,6 @@
 namespace Address {
     const uintptr_t gameAssembly = (uintptr_t)GetModuleHandle("GameAssembly.dll");
 
-    TextStructs::System_String_o* StringNew(std::string str)
-    {
-        using func_t = TextStructs::System_String_o* (*)(const char* str_t);
-
-        func_t func = (func_t)GetProcAddress((HMODULE)gameAssembly, "il2cpp_string_new");
-
-        return func(str.c_str());
-    }
-
     namespace TextMeshProUGUI {
         const uintptr_t OnPreRenderCanvas = gameAssembly + 0x42ACCE0; //
     }

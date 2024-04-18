@@ -393,19 +393,15 @@ void HomeTab()
 
 	ImGui::Text("Welcome to");
 	ImGui::SameLine();
-	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "Beyond");
+	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "Elements Base-Mod based of Beyond Client");
 
 	ImGui::Text("Made by");
 	ImGui::SameLine();
-	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "dll.gg");
-
-	ImGui::Text("Special Thanks to");
-	ImGui::SameLine();
-	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "Louis45, None, Foonix, JustCosmic, NeverBeenPwned");
+	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "dll.gg, NONE, Louis45");
 
 	ImGui::Text("Developing Firm");
 	ImGui::SameLine();
-	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "None Ltd");
+	ImGui::TextColored(ImVec4(150 / 255.0f, 112 / 255.0f, 154 / 255.0f, 255 / 255.0f), "Elementscheats");
 
 #pragma endregion
 }
@@ -1260,6 +1256,13 @@ void SafetyTab()
 	else
 		ImGui::TextColored(ImVec4(1.f, 0.f, 0.f, 1.f), "OFF");
 
+	ImGui::Selectable("Anti-Hexed Exploids", &Config::Photon::EventLimiter::Enabled);
+	ImGui::SameLine();
+	if (Config::Photon::EventLimiter::Enabled)
+		ImGui::TextColored(ImVec4(0.f, 1.f, 0.24f, 1.f), "ON");
+	else
+		ImGui::TextColored(ImVec4(1.f, 0.f, 0.f, 1.f), "OFF");
+
 
 	if (Config::Photon::EventLimiter::Shutdown) {
 		ImGui::SameLine(0.0);
@@ -1698,7 +1701,7 @@ void DrawCallBack()
 		if (Config::Menu::ShowMenu)
 		{
 			ImGui::SetNextWindowSize(ImVec2(580, 290));
-			ImGui::Begin("Beyond", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize);
+			ImGui::Begin("Elements Base", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize);
 			{
 				//if (Players::LocalPlayer.isValid())
 				if (true)
